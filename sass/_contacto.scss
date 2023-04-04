@@ -1,0 +1,14 @@
+/* APLICO MAP-GET */
+$estilomapa: (
+    ancho: 100%,
+    alto: 50rem,
+    margen: 0,
+    relleno: 2rem 2rem,   
+);
+
+.mapa {
+    width: map-get($estilomapa, $ancho);
+    height: map-get($estilomapa, $alto);
+    margin: map-get($estilomapa, $margen);
+    padding: map-get($estilomapa, $relleno);
+}
